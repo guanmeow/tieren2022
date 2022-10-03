@@ -1,0 +1,76 @@
+.a{
+    position: relative;
+    perspective: 1600px;
+    top: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.b{
+    width: 500px;
+    height: 300px;
+    position: absolute;
+    transform-style: preserve-3d;
+    animation: a 40s infinite cubic-bezier(.7,0,.17,1);
+    left: 100;
+    cursor: pointer;
+}
+.b div{
+    position: absolute;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background: no-repeat; */
+    opacity: 1;
+    width: 500px;
+    height: 300px;
+    align-items: center;
+    margin: auto;
+    float: left;
+    transform: rotateY(calc(var(--i)*60deg)) translateZ(600px);
+}
+@keyframes a{
+    0%{
+        transform: translateZ(-100px) rotateY(0deg);
+    }
+    16%{
+        transform: translateZ(-100px) rotateY(-60deg);
+    }
+    33%{
+        transform: translateZ(-100px) rotateY(-120deg);
+    }
+    49%{
+        transform: translateZ(-100px) rotateY(-180deg);
+    }
+    66%{
+        transform: translateZ(-100px) rotateY(-240deg);
+    }
+    83%{
+        transform: translateZ(-100px) rotateY(-300deg);
+    }
+    100%{
+        transform: translateZ(-100px) rotateY(-360deg);
+    }
+}
+.c{
+    background-image:url("./新增資料夾/FIX_llsp_webpop4.jpg");
+}
+.d{
+    background-image: url("./新增資料夾/ミニスタンド.jpg");
+}
+.e{
+    background-image: url("./新增資料夾/220714LLAS】イベ53-2、54-1_スクスタF25-2、27-1_p11-1_17種9月中旬発売.jpg");
+}
+.f{
+    background-image: url("./新增資料夾/220824【ラブライブスーパースター】スクエアカンバッジ_アニメ場面写1-3話.jpg");
+}
+.g{
+    background-image: url("./新增資料夾/LOVELIVEOUTDOOR01.jpeg");
+}
+.h{
+    background-image: url("./新增資料夾/Tシャツ.jpg");
+}
+.a:hover div {
+    -webkit-animation-play-state: paused;
+            animation-play-state: paused;
+}

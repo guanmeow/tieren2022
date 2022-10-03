@@ -1,0 +1,9 @@
+.teambox{
+    width: 580px;
+    height: 100px;
+    position: relative;
+    margin: 10px;
+    display: flex;
+    border-radius: 6px;
+}
+

@@ -1,7 +1,7 @@
 *{
     padding: 0ch;
     margin: 0cm;
-    /* width: 100%; */
+    font-family: DFKai-sb;
 }
 
 
@@ -30,6 +30,7 @@
     font-size: 70px;
     z-index: 5;
     text-shadow: #3943B7 5px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .menu{
    background-color: #3943B7;
@@ -103,7 +104,6 @@ height: auto;
     display: flex;
     width: 36%;
     height: 1000px;
-    /* background-color: antiquewhite; */
     position: relative;
     padding-top: 50px;
 }
@@ -213,18 +213,21 @@ table thead th:first-child {
 
   .over{
     position: absolute;
-    width: 100vw;
+    width: 98.9vw;
     height: 100vh;
-    background-color: #D9DDFF;
+    background-color: #ffffff;
     animation-duration: 4s;
     animation-name: over ;
-    z-index: 1;
+    z-index: 1000;
     animation-fill-mode: forwards;
     
   }
   @keyframes over{
     0%{
         opacity: 1;
+    }
+    80%{
+      opacity: 0.8;
     }
     100%{
         opacity: 0;
@@ -240,6 +243,7 @@ table thead th:first-child {
     top: 50%;
     margin-top: -53px;
     margin-left: -53px;
+    z-index: 1000;
   }
   .cssload-spinner:after, .cssload-spinner:before {
     position: absolute;
@@ -249,32 +253,50 @@ table thead th:first-child {
     height: 100px;
   }
   .cssload-spinner:after {
-    animation: cssload-spinner1 3.25s linear infinite;
+    animation: cssload-spinner1 4s linear infinite;
   }
   .cssload-spinner:before {
     width: 138px;
     height: 138px;
     margin-left: -20.5px;
     margin-top: -20.5px;
-    animation: cssload-spinner2 3.25s linear infinite;
+    animation: cssload-spinner2 4s linear infinite;
   }
   
   
   
   @keyframes cssload-spinner1 {
-    from {
+    0% {
       transform: rotate(0deg);
+      border-color: #3943B7;
+      z-index: 1000;
     }
-    to {
+    50% {
+      border-color: rgb(102, 230, 255);
+    }
+    100%{
+      border-color: #3943B7;
       transform: rotate(360deg);
+      z-index: -1;
     }
   }
   
   @keyframes cssload-spinner2 {
-    from {
+    0% {
       transform: rotate(0deg);
+      border-color: rgb(102, 230, 255);
+      z-index: 1000;
     }
-    to {
+    50% {
+      border-color: #3943B7;
+    }
+    100%{
+      border-color:rgb(102, 230, 255);
       transform: rotate(-360deg);
+      z-index: -1;
     }
   }
+
+  .fontstyle{
+    font-family: DFKai-sb;
+}

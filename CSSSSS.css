@@ -83,6 +83,18 @@ li :hover{
     position:relative;
 
 }
+.imgstyle{
+  padding: 0px;
+  width:700px;
+  height: 560px; 
+  overflow:hidden;
+  margin: auto;
+}
+.imgs{
+  float: left;
+  padding: 0px;
+}
+
 .list{
     /* float: left; */
     display: flex;

@@ -90,6 +90,25 @@ li :hover{
   overflow:hidden;
   margin: auto;
 }
+
+.pop{
+position:absolute;
+z-index: 10;
+top: 540px;
+width: 220px;
+left: 300px;
+transform: rotate(-10deg);
+}
+
+.pop2{
+  position:absolute;
+  z-index: 10;
+  top: 237px;
+  width: 200px;
+  right: 320px;
+  transform: rotate(15deg);
+  }
+
 .imgs{
   float: left;
   padding: 0px;
@@ -224,8 +243,8 @@ table thead th:first-child {
 
 
   .over{
-    position: absolute;
-    width: 98.9vw;
+    position: fixed;
+    width: 100vw;
     height: 100vh;
     background-color: #ffffff;
     animation-duration: 4s;

@@ -1,86 +1,110 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>商品一覽</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>商品一覽</title>
 
-    <script>
-      var cot=0;//設置一個計數器，初始值為0；作用是用來監聽點擊切換的時候哪一個圖片應該隱藏或者顯示
-      function nex(){
-      if(cot<=4){
-      $('.imgs img').eq(cot).animate({'margin-left':'-700px'},700);
-      cot++;
+  <script>
+    var cot = 0;//設置一個計數器，初始值為0；作用是用來監聽點擊切換的時候哪一個圖片應該隱藏或者顯示
+    function nex() {
+      if (cot <= 4) {
+        $('.imgs img').eq(cot).animate({ 'margin-left': '-700px' }, 700);
+        cot++;
       }
+    }
+    function pre() {
+      if (cot > 0) {
+        cot--;
+        $('.imgs img').eq(cot).animate({ 'margin-left': '0' }, 700);
       }
-      function pre(){
-      if(cot>0){
-      cot--;
-      $('.imgs img').eq(cot).animate({'margin-left':'0'},700);
-      }
-      }
-      </script>
-        <script src="https://cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
+    }
+  </script>
+  <script src="https://cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
 
-    <link rel="stylesheet" href="./CSSSSS.css">
-    <style>
-         li {
-            list-style-type:none;
-        }
-    </style>
+  <link rel="stylesheet" href="./CSSSSS.css">
+  <link rel="stylesheet" href="./pic box.css">
+  <style>
+    li {
+      list-style-type: none;
+    }
+  </style>
 </head>
-<body bgcolor="#D9DDFF">
-    <div class="box">
-        <li class="nav" id="title">ラブライブ×日本揪團購</li>
-      </div>
-    <div>
-      <nav class="menu">
-        <ul class="nav" style="font-size: 0.75cm; ">
-          <li>
-            <div class="shape">
-            <a href="./index.html">首頁</a> 
-            </div>
-          </li>
-          <li>
-            <div class="shape">
-              <a href="#">商品一覽</a>
-            </div>
-          </li>
-          <li>
-            <div class="shape">
-              <a href="./代購規則.html">代購規則</a>
-            </div>
-          </li>
-          <li>
-            <div class="shape"><a href="./聯絡我們.html">聯絡我們</a>
-            </div>
-          </li>
-        </ul>
-      </nav>
-     </div>
-     <br> <br> <br>
-     <div class="run"> 
-        <marquee direction="left"; scrollamount="7";><b>代購規則務必看過、喊單前請三思、喊單視同成年人</b></marquee> 
-      </div>
-      <br>
-      <div class="imgstyle"> 
-    <div class="imgs" style="width:7000000px;">
-          <img src="./pic/375602.jpg" width="700" class="imgs"/>
-          <img src="./pic/375603.jpg" width="700" class="imgs"/>
-          <img src="./pic/375604.jpg" width="700" class="imgs"/>
-          <img src="./pic/375605.jpg" width="700" class="imgs"/>
-          <img src="./pic/375606.jpg" width="700" class="imgs"/>
-          <img src="./pic/375607.jpg" width="700" class="imgs"/>
-    </div>
-    <div>
-    <div onclick="pre()" style="float:left;cursor:pointer">上一頁</div>
-    <div onclick="nex()" style="float:right;cursor:pointer">下一頁</div>
-    </div>
-    </div>
 
-    <div class="all">
-      <div class="cssload-loading">僅供鐵人賽使用，無商業用途</div>
+<body bgcolor="#D9DDFF">
+  <div class="box">
+    <li class="nav" id="title">ラブライブ×日本揪團購</li>
+  </div>
+  <div>
+    <nav class="menu">
+      <ul class="nav" style="font-size: 0.75cm; ">
+        <li>
+          <div class="shape">
+            <a href="./index.html">首頁</a>
+          </div>
+        </li>
+        <li>
+          <div class="shape">
+            <a href="#">商品一覽</a>
+          </div>
+        </li>
+        <!-- <li>
+          <div class="shape">
+            <a href="./代購規則.html">代購規則</a>
+          </div>
+        </li> -->
+        <li>
+          <div class="shape"><a href="./聯絡我們.html">聯絡我們</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <br> <br> <br>
+  <div class="run">
+    <marquee direction="left"  scrollamount="7" behavior="alternate"><b>代購規則務必看過、喊單前請三思、喊單視同成年人</b></marquee>
+  </div>
+  <br>
+  <img src="./pop_daikouhyou.png" alt="" class="pop">
+  <img src="./pop_saishin.png" alt="" class="pop2">
+  
+  <div class="imgstyle">
+    <div class="imgs" style="width:7000000px;">
+      <img src="./pic/375602.jpg" width="700" class="imgs" />
+      <img src="./pic/375603.jpg" width="700" class="imgs" />
+      <img src="./pic/375604.jpg" width="700" class="imgs" />
+      <img src="./pic/375605.jpg" width="700" class="imgs" />
+      <img src="./pic/375606.jpg" width="700" class="imgs" />
+      <img src="./pic/375607.jpg" width="700" class="imgs" />
     </div>
+    <div>
+      <div onclick="pre()" style="float:left;cursor:pointer">上一頁</div>
+      <div onclick="nex()" style="float:right;cursor:pointer">下一頁</div>
+    </div>
+  </div>
+
+  <div class="nav">
+    <div class="teambox" style="background-color: #E5007F ; border: #ffffff solid 5px;">
+      <img src="./新增資料夾/bnr_lovelive.png" alt="">
+    </div>
+    <div class="teambox" style="background-color: #18B1F5;border: #ffffff solid 5px;">
+      <img src="./新增資料夾/bnr_sunshine.png" alt="">
+    </div>
+  </div>
+  <div class="nav">
+    <div class="teambox" style="background-color: #F8B656;border: #ffffff solid 5px;">
+      <img src="./新增資料夾/bnr_nijigasaki.png" alt="">
+    </div>
+    <div class="teambox" style="background-color: #DA57D7;border: #ffffff solid 5px;">
+      <img src="./新增資料夾/bnr_superstar.png" alt="">
+    </div>
+  </div>
+
+  <div class="all">
+    <div class="cssload-loading">僅供鐵人賽使用，無商業用途</div>
+  </div>
 </body>
+
 </html>

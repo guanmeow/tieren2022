@@ -7,6 +7,61 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>商品一覽</title>
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript"></script>
+  <script>
+    $(document).ready(function () {
+      $("#btn").hide();
+      $("#btn2").click(function () {
+        $("#btn").slideToggle(200);
+        return false;
+      });
+      $("#btn1").click(function () {
+        $("#btn").hide();
+        return false;
+      });
+    });
+  </script>
+  <script>
+    $(document).ready(function () {
+      $("#btn-b").hide();
+      $("#btn4").click(function () {
+        $("#btn-b").slideToggle(200);
+        return false;
+      });
+      $("#btn3").click(function () {
+        $("#btn-b").hide();
+        return false;
+      });
+    });
+  </script>
+  <script>
+    $(document).ready(function () {
+      $("#btn-c").hide();
+      $("#btn6").click(function () {
+        $("#btn-c").slideToggle(200);
+        return false;
+      });
+      $("#btn5").click(function () {
+        $("#btn-c").hide();
+        return false;
+      });
+    });
+  </script>
+  <script>
+    $(document).ready(function () {
+      $("#btn-d").hide();
+      $("#btn8").click(function () {
+        $("#btn-d").slideToggle(200);
+        return false;
+      });
+      $("#btn7").click(function () {
+        $("#btn-d").hide();
+        return false;
+      });
+    });
+  </script>
+
   <script>
     var cot = 0;//設置一個計數器，初始值為0；作用是用來監聽點擊切換的時候哪一個圖片應該隱藏或者顯示
     function nex() {
@@ -64,13 +119,15 @@
   </div>
   <br> <br> <br>
   <div class="run">
-    <marquee direction="left"  scrollamount="7" behavior="alternate"><b>代購規則務必看過、喊單前請三思、喊單視同成年人</b></marquee>
+    <marquee direction="left" scrollamount="7" behavior="alternate"><b>代購規則務必看過、喊單前請三思、喊單視同成年人</b></marquee>
   </div>
+
+
   <br>
-  <img src="./pop_daikouhyou.png" alt="" class="pop">
-  <img src="./pop_saishin.png" alt="" class="pop2">
-  
+
   <div class="imgstyle">
+    <img src="./pop_daikouhyou.png" alt="" class="pop">
+    <img src="./pop_saishin.png" alt="" class="pop2">
     <div class="imgs" style="width:7000000px;">
       <img src="./pic/375602.jpg" width="700" class="imgs" />
       <img src="./pic/375603.jpg" width="700" class="imgs" />
@@ -85,20 +142,67 @@
     </div>
   </div>
 
+
   <div class="nav">
-    <div class="teambox" style="background-color: #E5007F ; border: #ffffff solid 5px;">
-      <img src="./新增資料夾/bnr_lovelive.png" alt="">
-    </div>
-    <div class="teambox" style="background-color: #18B1F5;border: #ffffff solid 5px;">
-      <img src="./新增資料夾/bnr_sunshine.png" alt="">
-    </div>
+    <button type="button" id="btn2">
+      <div class="teambox" style="background-color: #E5007F ; border: #ffffff solid 5px; cursor: pointer;;">
+        <img src="./新增資料夾/bnr_lovelive.png" alt="">
+      </div>
+    </button>
+    <button type="button" id="btn4">
+      <div class="teambox" style="background-color: #18B1F5;border: #ffffff solid 5px; cursor: pointer;">
+        <img src="./新增資料夾/bnr_sunshine.png" alt="">
+      </div>
+    </button>
   </div>
   <div class="nav">
-    <div class="teambox" style="background-color: #F8B656;border: #ffffff solid 5px;">
-      <img src="./新增資料夾/bnr_nijigasaki.png" alt="">
+    <button type="button" id="btn6">
+      <div class="teambox" style="background-color: #F8B656;border: #ffffff solid 5px; cursor: pointer;">
+        <img src="./新增資料夾/bnr_nijigasaki.png" alt="">
+      </div>
+    </button>
+    <button type="button" id="btn8">
+      <div class="teambox" style="background-color: #DA57D7;border: #ffffff solid 5px; cursor: pointer;">
+        <img src="./新增資料夾/bnr_superstar.png" alt="">
+      </div>
+    </button>
+  </div>
+  <div id="btn" style="width:100%;display: flex; justify-content: center;" >
+    <div class="goods1" >
+      <div class="boxset" style="background-image:url(./pic/timeline_20220829_140558.jpg) ; "></div>
+      <div class="boxset" style="background-image:url(./pic/timeline_20220923_104809.jpg) ;"></div>
+      <div class="boxset" style="background-image:url(./pic/timeline_20220923_105101.jpg) ;"></div>
+      <div class="boxset" style="background-image:url(./pic/375607.jpg) ;"></div>
     </div>
-    <div class="teambox" style="background-color: #DA57D7;border: #ffffff solid 5px;">
-      <img src="./新增資料夾/bnr_superstar.png" alt="">
+  </div>
+
+  <div id="btn-b" style="width:100%;  display: flex; justify-content: center;" >
+    <div class="goods2" >
+      <div class="boxset" style="background-image:url(./pic/375605.jpg) ;"></div>
+      <div class="boxset" style="background-image:url(./pic/timeline_20221006_213220.jpg) ;"></div>
+      <div class="boxset" style="background-image:url(./pic/timeline_20221006_212339.jpg) ;"></div>
+      <div class="boxset" style="background-color: #da57d800 ;"></div>
+    </div>
+  </div>
+
+  <div id="btn-c" style="width:100%; display: flex; justify-content: center;" >
+    <div class="goods3" >
+      <div class="boxset" style="background-image:url(./pic/375602.jpg) ;"></div>
+      <div class="boxset" style="background-image:url(./pic/375606.jpg) ;"></div>
+      <div class="boxset" style="background-image:url(./pic/timeline_20220926_180632.jpg) ;"></div>
+      <div class="boxset" style="background-color: #da57d800 ;"></div>
+    </div>
+  </div>
+
+  <div id="btn-d" style="width:100%; display: flex; justify-content: center;" >
+    <!-- <div class="linetitle"> 
+      <h3>456</h3>
+    </div> -->
+    <div class="goods4" >
+      <div class="boxset" style="background-image:url(./pic/375603.jpg) ;"></div>
+      <div class="boxset" style="background-image:url(./pic/timeline_20220907_121525.jpg) ;"></div>
+      <div class="boxset" style="background-image:url(./pic/timeline_20220917_131144.jpg) ;"></div>
+      <div class="boxset" style="background-image:url(./pic/timeline_20221006_212342.jpg) ;"></div>
     </div>
   </div>
 

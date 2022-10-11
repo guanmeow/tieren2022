@@ -1,0 +1,86 @@
+.talk {
+    width: 800px;
+    min-height: 300px;
+    border: 5px double #3943b7;
+    margin: auto;
+    margin-top: 20px;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+.talk .lyb {
+    width: 90%;
+    margin: auto;
+    display: block;
+    /* border: 1px solid rgb(36, 27, 27); */
+    padding: 5px 0px;
+    font-size: larger;
+    top: 10px;
+    position: relative;
+}
+
+.talk .div1 {
+    width: 90%;
+    border: 1px solid #3943b7;
+    margin: 10px auto;
+    top: 10px;
+    position: relative;
+    min-height: 100px;
+}
+
+.talk .div1 p {
+    width: 85%;
+    padding: 5px 0px;
+    height: 30px;
+    line-height: 30px;
+}
+
+.talk .div1 ul {
+    width: 100%;
+    /* padding-left: 0px; */
+    /* justify-content: center; */
+    margin: auto;
+    /* background-color: aquamarine */
+}
+
+.talk .div1 ul li {
+    width: 85%;
+    height: auto;
+    padding: 10px;
+    /* line-height: 20px; */
+    list-style: none;
+    margin: 5px;
+    /* background: rgb(255, 210, 143); */
+    
+}
+
+#wbk {
+    resize: none;
+    width: 90%;
+    margin: auto;
+    height: 80px;
+    display: block;
+    position: relative;
+    top: 10px;
+}
+
+#gobtn {
+    width: 40%;
+    height: 50px;
+    margin: auto;
+    justify-content: center;
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border: 5px royalblue double;
+    cursor: pointer;
+    position: relative;
+    background-color: rgb(177, 255, 255);
+    font-size: larger;
+}
+
+
+.talk a {
+    float: right;
+    color: rgb(5, 5, 14);
+}

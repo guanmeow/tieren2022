@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="./pic box.css">
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            color: white;
+            background-color: #3943B7;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="over">
+        <div class="cssload-tetrominos">
+            <div class="cssload-tetromino cssload-box1"></div>
+            <div class="cssload-tetromino cssload-box2"></div>
+            <div class="cssload-tetromino cssload-box3"></div>
+            <div class="cssload-tetromino cssload-box4"></div>
+          </div>
+      </div>
+    <div class="bea">
+        <form action="./index.html" method="get">
+            <table >
+                <tr>
+                    <td style="width: 100px;height:50px; text-align: center;border:1px white solid ;">信箱:</td>
+                    <td style="border:1px white solid ;"><input style="width:250px;height:50px; border: none;" type="email" name="email" id="email"
+                            placeholder=" 請輸入信箱"></td>
+                </tr>
+
+                <tr>
+                    <td style="width: 100px;height:50px;text-align: center;border:1px white solid ;">使用者名稱:</td>
+                    <td style="border:1px white solid ;"><input style="width:250px;height:50px;border: none;" type="text" name="name" required="required"
+                            placeholder=" 請輸入使用者名稱"></td>
+                </tr>
+
+                <tr>
+                    <td style="width: 100px;height:50px;text-align: center;border:1px white solid ;">密碼:</td>
+                    <td style="border:1px white solid ;"><input style="margin:0 auto; width:250px;height:50px;border: none;" minlength="6" maxlength="20"
+                            type="password" id="pwd" required="required" placeholder=" 請輸入6-20位密碼，建議數字和字母組合"></td>
+                </tr>
+
+                <tr>
+                    <td style="width: 100px;height:50px;text-align: center;border:1px white solid ;">確認密碼:</td>
+                    <td style="border:1px white solid ;"><input style="margin:0 auto; width:250px;height:50px;border: none;" type="password" id="pwd2"
+                            required="required" placeholder=" 再輸入一次密碼"></td>
+                </tr>
+
+                <tr>
+                    <td colspan="2" style="height:50px;text-align: center;"><input name="tongyi" type="checkbox"
+                            required="required">
+                        <label>我同意《使用者註冊協議》</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2" style="height:50px;text-align: center;"><input id="gis" type="submit" value="註冊"></td>
+                </tr>
+
+            </table>
+        </form>
+    </div>
+</body>
+
+</html>

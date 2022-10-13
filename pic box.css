@@ -7,3 +7,143 @@
     border-radius: 6px;
 }
 
+.bea{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    position: relative;
+    top: 100px;
+}
+
+.backg{
+    background-color:#3943B7;
+}
+
+input::-webkit-input-placeholder {
+    color: white;
+}
+
+.cssload-tetrominos {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -47px;
+	margin-left: -55px;
+	transform: translate(-109px, -94px);
+}
+
+.cssload-tetromino {
+	width: 94px;
+	height: 109px;
+	position: absolute;
+	transition: all ease 0.35s;
+	
+	background: url('data:image/svg+xml;utf-8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 612 684"%3E%3Cpath fill="%23010101" d="M305.7 0L0 170.9v342.3L305.7 684 612 513.2V170.9L305.7 0z"/%3E%3Cpath fill="%23fff" d="M305.7 80.1l-233.6 131 233.6 131 234.2-131-234.2-131"/%3E%3C/svg%3E') no-repeat top center;
+}
+
+.cssload-box1 {
+	animation: cssload-tetromino1 2s ease-out forwards;
+	/* transform: translate(0, 0); */
+}
+
+.cssload-box2 {
+	animation: cssload-tetromino2 2s ease-out forwards;
+}
+
+.cssload-box3 {
+	animation: cssload-tetromino3 2s ease-out forwards;
+	z-index: 2;
+}
+
+.cssload-box4 {
+	animation: cssload-tetromino4 2s ease-out forwards;
+	
+}
+
+@keyframes cssload-tetromino1 {
+	0%, 40% {
+		transform: translate(0, 0);
+	}
+	50% {
+		transform: translate(47px, -26px);
+	}
+	60%, 100% {
+		transform: translate(0, 0);
+	}
+}
+
+@keyframes cssload-tetromino2 {
+	0%, 20% {
+		transform: translate(94px, 0px);
+	}
+	40%, 100% {
+		transform: translate(141px, 26px);
+	}
+}
+
+@keyframes cssload-tetromino3 {
+	0% {
+		transform: translate(94px, 109px);
+		z-index: 10;
+	}
+	20%, 60% {
+		transform: translate(94px, 53px);
+		z-index: 10;
+	}
+	90%, 100% {
+		transform: translate(47px, 26px);
+	}
+}
+
+@keyframes cssload-tetromino4 {
+	0%, 80% {
+		transform: translate(47px, 26px);
+		z-index: 4;
+	}
+	90%, 100% {
+		transform: translate(94px, 52px);
+		z-index: 4;
+	}
+}
+
+.over {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffffff;
+    animation-duration: 2.5s;
+    animation-name: over;
+    z-index: 1000;
+    animation-fill-mode: forwards;
+  
+  }
+  
+  @keyframes over {
+    0% {
+      opacity: 1;
+    }
+  
+    85% {
+      opacity: 1;
+    }
+  
+    100% {
+      opacity: 0;
+      z-index: -1;
+    }
+  }
+
+#gis{
+    background-color: white;
+    color: black;
+    font-size: medium;
+    border-radius: 40%;
+    border: none;
+    cursor: pointer;
+    width: 50px;
+    height: 30px;
+}
+#gis:hover{
+    background-color: #c2f8ff;
+    color: #3943B7;
+}
